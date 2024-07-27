@@ -9,3 +9,4 @@ Add to ./pretrained_models
 
 4) ArcFACE https://drive.google.com/file/d/1F3wrQALEOd1Vku8ArJ_Gn4T6U3IX7Pz7/view
 
+Extract data.tar.gz under  ./libs https://drive.google.com/file/d/1BHVJAEXscaXMj_p2rOsHYF_vaRRRHQbA/view
