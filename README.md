@@ -1,4 +1,14 @@
 # F_Reenact
+## Set up Anaconda environment:
+
+'''
+conda create -n hyperreenact_env python=3.8
+conda activate hyperreenact_env
+conda install pytorch==1.7.0 torchvision==0.8.0 cudatoolkit=11.0 -c pytorch
+pip install -r requirements.txt
+'''
+
+## Download all pretrained models
 Add to ./pretrained_models
 
 1) style_encoder https://drive.google.com/file/d/1ZLJAuagW46QHtAnhqiuFtYxVdNbJ-QH-/view?usp=sharing
@@ -10,3 +20,9 @@ Add to ./pretrained_models
 4) ArcFACE https://drive.google.com/file/d/1F3wrQALEOd1Vku8ArJ_Gn4T6U3IX7Pz7/view
 
 Extract data.tar.gz under  ./libs https://drive.google.com/file/d/1BHVJAEXscaXMj_p2rOsHYF_vaRRRHQbA/view
+
+
+## Run script
+'''
+python run_trainer.py  --batch_size 8 --lr 1e-4  --experiment_path "..." --type "cross"  --train_dataset_path  "Voxceleb1" --test_dataset_path  "Voxceleb2" --cherry_dataset_path  'Cherry images' 
+'''
